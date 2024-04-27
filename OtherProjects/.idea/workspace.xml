@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="be35d8e2-4fb6-400b-a7b8-a7f8adb357d8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/hust/soict/dsai/garbage/ConcatenationInLoops.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/hust/soict/dsai/garbage/GarbageCreator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hust/soict/dsai/garbage/text.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
