@@ -35,7 +35,7 @@ public class Cart {
             System.out.println("Maximum number of orders exceeded.");
         }
     }
-    }
+
     public void removeDigitalVideoDisc(DigitalVideoDisc disc) {
         boolean removed = false;
         for (int i = 0; i < qtyOrdered; i++){
