@@ -65,11 +65,13 @@ public class Cart {
     }
 
     public void print() {
+        System.out.println("***********************CART***********************");
         System.out.println("Ordered Items:");
         for (int i = 1; i <= qtyOrdered; i++ ) {
             System.out.println(i + ". " + itemsOrdered[i-1].toString());
         }
         System.out.println("Total cost: " + totalCost());
+        System.out.println("***************************************************");
     }
 
     public void searchById(int id) {
