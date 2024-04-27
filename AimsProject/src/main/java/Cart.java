@@ -14,19 +14,7 @@ public class Cart {
         }
     }
 
-//    public void addDigitalVideoDisc(DigitalVideoDisc[] dvdList) {
-//        if (qtyOrdered + dvdList.length <= 20){
-//            for (DigitalVideoDisc dvd: dvdList) {
-//                itemsOrdered[qtyOrdered] = dvd;
-//                qtyOrdered ++;
-//            }
-//            System.out.println("The discs have been added.");
-//        } else {
-//            System.out.println("Maximum number of orders exceeded.");
-//        }
-//    }
-
-    public void addDigitalVideoDisc(DigitalVideoDisc... dvdList){
+    public void addDigitalVideoDisc(DigitalVideoDisc[] dvdList) {
         if (qtyOrdered + dvdList.length <= 20){
             for (DigitalVideoDisc dvd: dvdList) {
                 itemsOrdered[qtyOrdered] = dvd;
@@ -36,6 +24,17 @@ public class Cart {
         } else {
             System.out.println("Maximum number of orders exceeded.");
         }
+    }
+
+    public void addDigitalVideoDisc(DigitalVideoDisc d1, DigitalVideoDisc d2) {
+        if (qtyOrdered <= 18){
+            addDigitalVideoDisc(d1);
+            addDigitalVideoDisc(d2);
+            System.out.println("The discs have been added.");
+        } else {
+            System.out.println("Maximum number of orders exceeded.");
+        }
+    }
     }
     public void removeDigitalVideoDisc(DigitalVideoDisc disc) {
         boolean removed = false;
