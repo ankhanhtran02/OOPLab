@@ -63,4 +63,46 @@ public class Cart {
         }
         return sum;
     }
+
+    public void print() {
+        System.out.println("Ordered Items:");
+        for (int i = 1; i <= qtyOrdered; i++ ) {
+            System.out.println(i + ". " + itemsOrdered[i-1].toString());
+        }
+        System.out.println("Total cost: " + totalCost());
+    }
+
+    public void searchById(int id) {
+        boolean found = false;
+        System.out.println("Search: " + id);
+        System.out.println("Search result:");
+        for (int i = 0; i < qtyOrdered; i++ ) {
+            DigitalVideoDisc dvd = itemsOrdered[i];
+            if (dvd.getId() == id) {
+                System.out.println(dvd.toString());
+                found = true;
+                break;
+            }
+            }
+        if (!found) {
+            System.out.println("No match is found.");
+        }
+    }
+
+    public void searchByTitle(String title) {
+        System.out.println("Search: " + title);
+        System.out.println("Search result:");
+        boolean found = false;
+        for (int i = 0; i < qtyOrdered; i++) {
+            DigitalVideoDisc dvd = itemsOrdered[i];
+            if (dvd.isMatch(title)) {
+                System.out.println(dvd.toString());
+                found = true;
+            }
+        }
+        if (!found) {
+            System.out.println("No match is found.");
+        }
+    }
 }
+
