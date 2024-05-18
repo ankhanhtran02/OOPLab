@@ -29,4 +29,15 @@ public class Book extends Media{
             System.out.println(authorName + "is not in the author list");
         }
     }
+
+    @Override
+    public String toString() {
+        return "Book{" +
+                "Authors=" + authors + '\'' +
+                ", ID=" + getId() +
+                ", Title='" + getTitle() + '\'' +
+                ", Category='" + getCategory() + '\'' +
+                ", Cost=" + getCost() +
+                "}\n";
+    }
 }
