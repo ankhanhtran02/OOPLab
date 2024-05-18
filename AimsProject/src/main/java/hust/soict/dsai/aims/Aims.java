@@ -223,9 +223,9 @@ public class Aims {
         }
     }
     public static void main(String[] args) {
-        DigitalVideoDisc dvd = new DigitalVideoDisc("The Lion King", "Animation", "Roger Allers", 87, 19.95f);
-        Book book = new Book(1, "Game of Thrones", "Adventure", 30.6f, new ArrayList<String>(Arrays.asList("Binh", "Khanh")));
-        CompactDisc cd = new CompactDisc("A case in Bohemia", "Mystery", 30.2f);
+        CompactDisc cd = new CompactDisc("Thriller", "Music", 51.5f);
+        DigitalVideoDisc dvd = new DigitalVideoDisc("Contratiempo", "Crime", "Oriol Paulo", 106, 30.0f);
+        Book book = new Book(5, "Harry Potter", "Fantasy", 11.4f,  new ArrayList<>(Arrays.asList("J.K Rowling")));
         mainStore.addMedia(cd);
         mainStore.addMedia(dvd);
         mainStore.addMedia(book);
