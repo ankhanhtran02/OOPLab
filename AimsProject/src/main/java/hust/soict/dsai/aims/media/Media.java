@@ -50,4 +50,14 @@ public abstract class Media {
         }
         return matched;
     }
+    @Override
+    public boolean equals(Object obj){
+        if (this == obj){
+            return true;
+        } if (obj == null || getClass() != obj.getClass()) {
+            return false;
+        }
+        Media other = (Media) obj;
+        return this.title.equals(other.title);
+    }
 }
