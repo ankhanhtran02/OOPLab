@@ -19,6 +19,7 @@ public class Aims {
         media.add(dvd);
         media.add(book);
 
+        media.sort(Media.COMPARE_BY_COST_TITLE);
         for (Media m: media) {
             System.out.println(m.toString());
         }
