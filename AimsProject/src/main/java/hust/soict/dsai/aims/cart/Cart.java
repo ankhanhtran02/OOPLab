@@ -44,39 +44,44 @@ public class Cart {
         System.out.println("***************************************************");
     }
 
-    public void searchById(int id) {
-        boolean found = false;
-        System.out.println("Search: " + id);
-        System.out.println("Search result:");
-        int qtyOrdered = itemsOrdered.size();
-        for (int i = 0; i < qtyOrdered; i++ ) {
-            Media item = itemsOrdered.get(i);
-            if (item.getId() == id) {
-                System.out.println(item.toString());
-                found = true;
-                break;
+    public Media searchByTitle(String title){
+        for (Media item: itemsOrdered){
+            if (item.isMatch(title)){
+                return item;
             }
-            }
-        if (!found) {
-            System.out.println("No match is found.");
         }
+        return null;
+    }
+    public Media searchById(int id){
+        for (Media item: itemsOrdered){
+            if (item.getId() == id){
+                return item;
+            }
+        }
+        return null;
     }
 
-    public void searchByTitle(String title) {
-        System.out.println("Search: " + title);
-        System.out.println("Search result:");
-        boolean found = false;
-        int qtyOrdered = itemsOrdered.size();
-        for (int i = 0; i < qtyOrdered; i++) {
-            Media item = itemsOrdered.get(i);
-            if (item.isMatch(title)) {
-                System.out.println(item.toString());
-                found = true;
-            }
+    public void filter(int id){
+        Media item = searchById(id);
+        System.out.println(item);
+    }
+    public void filter(String title){
+        Media item = searchByTitle(title);
+        System.out.println(item);
+    }
+    public void sort(int option){
+        if (option == 1) {
+            itemsOrdered.sort(Media.COMPARE_BY_COST_TITLE);
         }
-        if (!found) {
-            System.out.println("No match is found.");
+        else{
+            itemsOrdered.sort(Media.COMPARE_BY_TITLE_COST);
         }
+        print();
+    }
+
+    public void placeOrder(){
+        System.out.println("Your order has been placed");
+        itemsOrdered.clear();
     }
 }
 
