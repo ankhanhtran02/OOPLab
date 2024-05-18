@@ -1,0 +1,37 @@
+- Which classes are aggregates of other classes?
+Answer:
+    + Store aggregates Media through ArrayList<Media> itemsInStore.
+    + Cart aggregates Media through ArrayList<Media> itemsOrdered.
+    + CompactDisc aggregates Track through ArrayList<Track> tracks.
+
+- When overriding the equals() method of the Object class, you will have to cast the Object
+parameter obj to the type of Object that you are dealing with. For example, in the Media class, you
+must cast the Object obj to a Media, and then check the equality of the two objects’ attributes as the
+above requirements (i.e. title for Media; title and length for Track). If the passing object is
+not an instance of Media, what happens?
+Answer: If the passing object is not an instance of Media, it will not satisfy the equality condition. The equals() method will return false
+
+Question: Alternatively, to compare items in the cart, instead of using Comparator, we can use the
+Comparable interface and override the compareTo()method. You can refer to the Java docs to see the
+information of this interface.
+Suppose we are taking this Comparable interface approach.
+- What class should implement the Comparable interface?
+Answer: The Media class should implement the Comparable interface because it is the base class for all media
+
+- In those classes, how should you implement the compareTo()method be to reflect the ordering that we want?
+Answer:  to reflect the ordering that we want, we can override the compareTo() method.
+
+- Can we have two ordering rules of the item (by title then cost and by cost then title) if we use this Comparable interface approach?
+Answer: We cannot have two ordering rules of the item if we use the Comparable interface and override the compareTo()method. However, we can have multiple ordering rules for items by implementing the Comparable interface and using different comparator classes.
+
+- Suppose the DVDs has a different ordering rule from the other media types, that is by title, then decreasing length, then cost. How would you modify your code to allow this?
+Answer: 
+public int compareTo(Media m) {
+	int compareTitle = this.title.compareToIgnoreCase(m.title);
+	if (compareTitle < 0) return -1;
+	if (compareTitle > 0) return 1;
+	if (this.length > m.length) return -1;
+	if (this.length < m.length) return 1;
+	if (this.cost < m.cost) return -1;
+	if (this.cost > m.cost) return 1;
+	return 0; }
