@@ -60,4 +60,14 @@ public class StoreScreen extends JFrame {
         header.add(Box.createRigidArea (new Dimension (10, 10)));
         return header;
     }
+    public StoreScreen(Store store){
+        this.store = store;
+        Container cp = getContentPane();
+        cp.setLayout(new BorderLayout());
+        cp.add(createNorth(), BorderLayout.NORTH);
+        cp.add(createCenter(), BorderLayout.CENTER);
+        setVisible(true);
+        setTitle("Store");
+        setSize(1024, 768);
+    }
 }
