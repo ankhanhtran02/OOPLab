@@ -4,6 +4,7 @@ module org.example.guiproject {
 
     requires org.controlsfx.controls;
     requires org.kordamp.bootstrapfx.core;
+    requires java.desktop;
 
     opens org.example.guiproject to javafx.fxml;
     exports org.example.guiproject;
