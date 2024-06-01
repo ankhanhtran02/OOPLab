@@ -56,6 +56,7 @@ public class NumberGrid extends JFrame{
         panelButtons.add(btnReset);
         btnReset.addActionListener(btnListener);
     }
+
     private class ButtonListener implements ActionListener{
         @Override
         public void actionPerformed(ActionEvent e) {
@@ -77,6 +78,6 @@ public class NumberGrid extends JFrame{
         }
     }
     public static void main(String[] args){
-        new NumberGrid();
+        NumberGrid numberGrid = new NumberGrid();
     }
 }

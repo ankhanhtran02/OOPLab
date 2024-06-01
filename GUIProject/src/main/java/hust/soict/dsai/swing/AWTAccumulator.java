@@ -1,9 +1,10 @@
 package hust.soict.dsai.swing;
 
-import java.awt.TextField;
-import java.awt.GridLayout;
+
 import java.awt.Frame;
+import java.awt.GridLayout;
 import java.awt.Label;
+import java.awt.TextField;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
