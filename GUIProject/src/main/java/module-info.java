@@ -1,4 +1,4 @@
-module org.example.guiproject {
+module hust.soict.dsai.javafx {
     requires javafx.controls;
     requires javafx.fxml;
 
@@ -6,6 +6,6 @@ module org.example.guiproject {
     requires org.kordamp.bootstrapfx.core;
     requires java.desktop;
 
-    opens org.example.guiproject to javafx.fxml;
-    exports org.example.guiproject;
+    opens hust.soict.dsai.javafx to javafx.fxml;
+    exports hust.soict.dsai.javafx;
 }
