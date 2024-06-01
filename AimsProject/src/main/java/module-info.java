@@ -4,6 +4,7 @@ module hust.soict.dsai {
 
     requires org.controlsfx.controls;
     requires org.kordamp.bootstrapfx.core;
+    requires javafx.swing;
 
 //    opens hust.soict.dsai.aimsproject to javafx.fxml;
 //    exports hust.soict.dsai.aimsproject;
