@@ -3,7 +3,9 @@ package hust.soict.dsai.aims.screen;
 import hust.soict.dsai.aims.store.Store;
 import javax.swing.*;
 import java.awt.*;
+import java.util.ArrayList;
 
+import hust.soict.dsai.aims.media.Media;
 public class StoreScreen extends JFrame {
     private Store store;
     JPanel createNorth(){
@@ -29,6 +31,20 @@ public class StoreScreen extends JFrame {
         menuBar.add(menu);
         return menuBar;
     }
+
+    JPanel createCenter() {
+        JPanel center = new JPanel();
+        center.setLayout(new GridLayout (3, 3, 2, 2));
+
+        ArrayList<Media> mediaInStore = store.getItemsInStore();
+        for (int i = 0; i < 9; i++) {
+            MediaStore cell = new MediaStore (mediaInStore.get(i));
+            center.add(cell);
+        }
+
+        return center;
+    }
+
     JPanel createHeader() {
         JPanel header = new JPanel();
         header.setLayout(new BoxLayout (header, BoxLayout.X_AXIS));

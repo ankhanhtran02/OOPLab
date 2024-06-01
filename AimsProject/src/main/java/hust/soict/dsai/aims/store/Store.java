@@ -8,6 +8,11 @@ import java.util.ArrayList;
 public class Store {
     public static int MAX_QUANTITY = 50000;
     private ArrayList<Media> itemsInStore = new ArrayList<Media>();
+
+    public ArrayList<Media> getItemsInStore() {
+        return itemsInStore;
+    }
+
     public void addMedia(Media media){
         if (itemsInStore.size() == MAX_QUANTITY){
             System.out.println("Maximum quantity exceeded");
