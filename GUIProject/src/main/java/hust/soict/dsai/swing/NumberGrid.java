@@ -56,5 +56,27 @@ public class NumberGrid extends JFrame{
         panelButtons.add(btnReset);
         btnReset.addActionListener(btnListener);
     }
-
+    private class ButtonListener implements ActionListener{
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            String button = e.getActionCommand();
+            if(button.charAt(0) >= '0' && button.charAt(0) <= '9') {
+                tfDisplay.setText(tfDisplay.getText() + button);
+            }
+            else if (button.equals("DEL")) {
+                //handle the DEL case
+                String onScreenDigits = tfDisplay.getText();
+                if (onScreenDigits.length() > 0) {
+                    tfDisplay.setText(onScreenDigits.substring(0, onScreenDigits.length() - 1));
+                }
+            }
+            else {
+                //handle the C case
+                tfDisplay.setText("");
+            }
+        }
+    }
+    public static void main(String[] args){
+        new NumberGrid();
+    }
 }
