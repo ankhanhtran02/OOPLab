@@ -2,6 +2,8 @@ package hust.soict.dsai.aims.screen;
 
 import hust.soict.dsai.aims.store.Store;
 
-public class StoreScreen {
+import java.awt.*;
+
+public class StoreScreen extends Frame {
     private Store store;
 }
