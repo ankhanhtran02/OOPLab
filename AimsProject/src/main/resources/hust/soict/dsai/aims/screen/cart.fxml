@@ -32,7 +32,7 @@
                     <MenuItem mnemonicParsing="false" text="Add DVD" />
                   </items>
                 </Menu>
-                <MenuItem mnemonicParsing="false" text="View Store" onAction="#btnViewStorePressed" />
+                <MenuItem mnemonicParsing="false" onAction="#btnViewStorePressed" text="View Store" />
                 <MenuItem mnemonicParsing="false" text="View Cart" />
               </items>
             </Menu>
@@ -84,7 +84,7 @@
 
           </children>
         </HBox>
-        <TableView fx:id="tblMedia">
+        <TableView>
           <columns>
             <TableColumn fx:id="colMediaTitle" prefWidth="75.0" text="Title" />
             <TableColumn fx:id="colMediaCategory" prefWidth="75.0" text="Category" />
@@ -96,15 +96,15 @@
         </TableView>
         <ButtonBar prefHeight="40.0" prefWidth="200.0">
           <buttons>
-            <Button fx:id="btnPlay" mnemonicParsing="false" text="Play" onAction="#btnPlayPressed"/>
-            <Button fx:id="btnRemove" mnemonicParsing="false" text="Remove" onAction="#btnRemovePressed"/>
+            <Button fx:id="btnPlay" mnemonicParsing="false" onAction="#btnPlayPressed" text="Play" />
+            <Button fx:id="btnRemove" mnemonicParsing="false" onAction="#btnRemovePressed" text="Remove" />
           </buttons>
         </ButtonBar>
       </children>
     </VBox>
   </center>
   <right>
-    <VBox alignment="TOP_CENTER" prefHeight="200.0" BorderPane.alignment="CENTER">
+    <VBox fx:id="tblMedia" alignment="TOP_CENTER" prefHeight="200.0" BorderPane.alignment="CENTER">
       <padding>
         <Insets top="50.0" />
       </padding>
@@ -123,7 +123,7 @@
             </Label>
           </children>
         </HBox>
-        <Button fx:id="btnPlaceOrder" mnemonicParsing="false" style="-fx-background-color: red;" text="Place Order" textFill="WHITE" onAction="#btnPlaceOrderPressed">
+        <Button fx:id="btnPlaceOrder" mnemonicParsing="false" onAction="#btnPlaceOrderPressed" style="-fx-background-color: red;" text="Place Order" textFill="WHITE">
           <font>
             <Font size="24.0" />
           </font>

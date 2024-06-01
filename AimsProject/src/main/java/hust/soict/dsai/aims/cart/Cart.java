@@ -1,12 +1,14 @@
 package hust.soict.dsai.aims.cart;
 import hust.soict.dsai.aims.media.DigitalVideoDisc;
 import hust.soict.dsai.aims.media.Media;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 
 import java.util.ArrayList;
 
 public class Cart {
     public static final int MAX_NUMBER_ORDERED = 20;
-    private ArrayList<Media> itemsOrdered = new ArrayList<Media>();
+    private ObservableList<Media> itemsOrdered = FXCollections.observableArrayList();
     public void addMedia(Media media){
         if (itemsOrdered.size() == MAX_NUMBER_ORDERED){
             System.out.println("Maximum number of orders exceeded");
@@ -82,6 +84,10 @@ public class Cart {
     public void placeOrder(){
         System.out.println("Your order has been placed");
         itemsOrdered.clear();
+    }
+
+    public ObservableList<Media> getItemOrdered() {
+        return itemsOrdered;
     }
 }
 
