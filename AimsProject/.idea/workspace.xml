@@ -7,6 +7,7 @@
     <list default="true" id="24af0b27-a563-4499-ad49-bdc74ad002b5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hust/soict/dsai/aims/screen/CartScreenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hust/soict/dsai/aims/screen/CartScreenController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,9 +44,10 @@
   "keyToString": {
     "Application.CartScreen.executor": "Run",
     "Application.HelloApplication.executor": "Run",
+    "Application.StoreTest.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "08-update-buttons",
+    "git-widget-placeholder": "09-delete-media",
     "kotlin-language-version-configured": "true"
   }
 }]]></component>
@@ -53,6 +55,15 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\SchoolworkBK\20232\OOP\OOPLab\AimsProject\src\main\resources\hust\soict\dsai\aims\screen" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="StoreTest" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="hust.soict.dsai.test.store.StoreTest" />
+      <module name="AimsProject" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
