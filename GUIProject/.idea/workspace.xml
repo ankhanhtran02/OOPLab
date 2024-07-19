@@ -6,8 +6,48 @@
   <component name="ChangeListManager">
     <list default="true" id="04d37423-8273-4c94-b5f1-2a836279eac5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/../AimsProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AimsProject/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AimsProject/Design/class.asta" beforeDir="false" afterPath="$PROJECT_DIR$/../AimsProject/Design/class.asta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AimsProject/src/main/java/hust/soict/dsai/aims/media/Media.java" beforeDir="false" afterPath="$PROJECT_DIR$/../AimsProject/src/main/java/hust/soict/dsai/aims/media/Media.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AimsProject/src/main/java/hust/soict/dsai/aims/screen/CartScreenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../AimsProject/src/main/java/hust/soict/dsai/aims/screen/CartScreenController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../AimsProject/src/main/java/hust/soict/dsai/aims/screen/MediaStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/../AimsProject/src/main/java/hust/soict/dsai/aims/screen/MediaStore.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../AimsProject/src/main/java/hust/soict/dsai/aims/screen/StoreScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/../AimsProject/src/main/java/hust/soict/dsai/aims/screen/StoreScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hust/soict/dsai/swing/AWTAccumulator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hust/soict/dsai/swing/AWTAccumulator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hust/soict/dsai/swing/SwingAccumulator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hust/soict/dsai/swing/SwingAccumulator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P/Design/class.asta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P/Design/class.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P/Requirement/usecase.asta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P/Requirement/usecase.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P/src/main/java/hust/soict/dsai/aims/Aims.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P/src/main/java/hust/soict/dsai/aims/cart/Cart.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P/src/main/java/hust/soict/dsai/aims/media/Book.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P/src/main/java/hust/soict/dsai/aims/media/CompactDisc.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P/src/main/java/hust/soict/dsai/aims/media/DigitalVideoDisc.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P/src/main/java/hust/soict/dsai/aims/media/Disc.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P/src/main/java/hust/soict/dsai/aims/media/Media.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P/src/main/java/hust/soict/dsai/aims/media/MediaComparatorByCostTitle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P/src/main/java/hust/soict/dsai/aims/media/MediaComparatorByTitleCost.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P/src/main/java/hust/soict/dsai/aims/media/Playable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P/src/main/java/hust/soict/dsai/aims/media/Track.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P/src/main/java/hust/soict/dsai/aims/screen/MediaStore.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P/src/main/java/hust/soict/dsai/aims/screen/StoreScreen.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P/src/main/java/hust/soict/dsai/aims/store/Store.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P/src/main/java/hust/soict/dsai/test/cart/CartTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P/src/main/java/hust/soict/dsai/test/disc/TestPassingParameter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P/src/main/java/hust/soict/dsai/test/store/StoreTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P/src/main/java/module-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P/src/main/resources/hust/soict/dsai/screen/cart.fxml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,8 +90,12 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "11-gui",
-    "kotlin-language-version-configured": "true"
+    "git-widget-placeholder": "15-modify-equals",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "E:/SchoolworkBK/20232/OOP/javafx-sdk-22.0.1/lib",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.46375144"
   }
 }]]></component>
   <component name="SharedIndexes">

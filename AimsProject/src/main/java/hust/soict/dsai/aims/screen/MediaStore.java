@@ -1,6 +1,7 @@
 package hust.soict.dsai.aims.screen;
 
 import hust.soict.dsai.aims.cart.Cart;
+import hust.soict.dsai.aims.exception.PlayerException;
 import hust.soict.dsai.aims.media.Media;
 import hust.soict.dsai.aims.media.Playable;
 import javax.swing.*;
@@ -37,7 +38,11 @@ public class MediaStore extends JPanel {
             playButton.addActionListener(new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
-                    JOptionPane.showMessageDialog(null, "Playing " + media.getTitle() + ".");
+                    try {
+                        ((Playable) media).play();
+                    } catch (PlayerException ex) {
+                        throw new RuntimeException(ex);
+                    }
                 }
             });
             container.add(playButton);

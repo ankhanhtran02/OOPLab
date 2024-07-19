@@ -35,6 +35,12 @@ public class CartScreenController {
     @FXML
     private Button btnPlaceOrder;
     @FXML
+    private MenuItem addBookBtn;
+    @FXML
+    private MenuItem addCDBtn;
+    @FXML
+    private MenuItem addDVDBtn;
+    @FXML
     private Label lblTotalCost;
     public CartScreenController(Cart cart, CartScreen cartScreen, Store store) {
         super();
@@ -84,6 +90,7 @@ public class CartScreenController {
     }
     @FXML
     public void btnViewStorePressed(ActionEvent event){
+        new StoreScreen(store, cart);
         cartScreen.dispose();
     }
     @FXML
@@ -106,8 +113,19 @@ public class CartScreenController {
         alert.setContentText("Your order has been placed successfully!");
 
         alert.showAndWait();
-
-
     }
 
+    @FXML
+    public void addBookBtnPressed(ActionEvent event) {
+        new AddBookToStoreScreen(store, cart);
+    }
+    @FXML
+    public void addCDBtnPressed(ActionEvent event) {
+        new AddCompactDiscToStoreScreen(store, cart);
+    }
+
+    @FXML
+    public void addDVDBtnPressed(ActionEvent event) {
+        new AddDigitalVideoDiscToStoreScreen(store, cart);
+    }
 }

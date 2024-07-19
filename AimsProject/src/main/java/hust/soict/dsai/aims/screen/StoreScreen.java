@@ -56,10 +56,10 @@ public class StoreScreen extends JFrame {
 
         menu.add(smUpdateStore);
         JMenuItem viewStoreItem = new JMenuItem("View store");
-        viewStoreItem.addActionListener(new ViewStoreButtonListener(this.cart, this, this.store));
+        viewStoreItem.addActionListener(new ViewStoreButtonListener());
         menu.add(viewStoreItem);
         JMenuItem viewCartItem = new JMenuItem("View cart");
-        viewCartItem.addActionListener(new ViewCartButtonListener(this.cart, this, this.store));
+        viewCartItem.addActionListener(new ViewCartButtonListener());
         menu.add(viewCartItem);
 
         JMenuBar menuBar = new JMenuBar();
@@ -89,7 +89,7 @@ public class StoreScreen extends JFrame {
         title.setForeground(Color.CYAN);
         JButton cart = new JButton("View cart");
         cart.setPreferredSize (new Dimension(100, 50)); cart.setMaximumSize(new Dimension (100, 50));
-        cart.addActionListener(new ViewCartButtonListener(this.cart, this, this.store));
+        cart.addActionListener(new ViewCartButtonListener());
         header.add(Box.createRigidArea (new Dimension (10, 10)));
         header.add(title);
         header.add(Box.createHorizontalGlue());
@@ -99,36 +99,18 @@ public class StoreScreen extends JFrame {
     }
 
     private class ViewCartButtonListener implements ActionListener{
-        private Cart cart;
-        private StoreScreen storeScreen;
-        private Store store;
-
-        ViewCartButtonListener(Cart cart, StoreScreen storeScreen, Store store){
-            this.cart = cart;
-            this.storeScreen = storeScreen;
-            this.store = store;
-        }
         @Override
         public void actionPerformed(ActionEvent e){
-            new CartScreen(this.cart, this.store);
-            this.storeScreen.dispose();
+            new CartScreen(cart, store);
+            StoreScreen.this.dispose();
         }
     }
 
     private class ViewStoreButtonListener implements ActionListener{
-        private Cart cart;
-        private StoreScreen storeScreen;
-        private Store store;
-
-        ViewStoreButtonListener(Cart cart, StoreScreen storeScreen, Store store){
-            this.cart = cart;
-            this.storeScreen = storeScreen;
-            this.store = store;
-        }
         @Override
         public void actionPerformed(ActionEvent e){
-            new StoreScreen(this.store, this.cart);
-            this.storeScreen.dispose();
+            new StoreScreen(store, cart);
+            StoreScreen.this.dispose();
         }
     }
 
@@ -164,18 +146,6 @@ public class StoreScreen extends JFrame {
         setTitle("Store");
         setSize(1024, 768);
     }
-    public StoreScreen(Store store){
-        this.store = store;
-        this.cart = new Cart();
-        Container cp = getContentPane();
-        cp.setLayout(new BorderLayout());
-        cp.add(createNorth(), BorderLayout.NORTH);
-        cp.add(createCenter(), BorderLayout.CENTER);
-        setVisible(true);
-        setTitle("Store");
-        setSize(1024, 768);
-    }
-
     public StoreScreen(Store store, Cart cart){
         this.store = store;
         this.cart = cart;

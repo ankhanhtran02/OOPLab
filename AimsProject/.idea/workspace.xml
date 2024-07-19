@@ -5,14 +5,52 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="24af0b27-a563-4499-ad49-bdc74ad002b5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/hust/soict/dsai/aims/exception/PlayerException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hust/soict/dsai/aims/Aims.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hust/soict/dsai/aims/Aims.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hust/soict/dsai/aims/cart/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hust/soict/dsai/aims/cart/Cart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hust/soict/dsai/aims/media/CompactDisc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hust/soict/dsai/aims/media/CompactDisc.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hust/soict/dsai/aims/media/DigitalVideoDisc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hust/soict/dsai/aims/media/DigitalVideoDisc.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hust/soict/dsai/aims/media/Playable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hust/soict/dsai/aims/media/Playable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hust/soict/dsai/aims/media/Track.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hust/soict/dsai/aims/media/Track.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Design/class.asta" beforeDir="false" afterPath="$PROJECT_DIR$/Design/class.asta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hust/soict/dsai/aims/media/Media.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hust/soict/dsai/aims/media/Media.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hust/soict/dsai/aims/screen/AddItemToStoreScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hust/soict/dsai/aims/screen/AddItemToStoreScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hust/soict/dsai/aims/screen/CartScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hust/soict/dsai/aims/screen/CartScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hust/soict/dsai/aims/screen/CartScreenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hust/soict/dsai/aims/screen/CartScreenController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hust/soict/dsai/aims/screen/MediaStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hust/soict/dsai/aims/screen/MediaStore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hust/soict/dsai/aims/screen/StoreScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hust/soict/dsai/aims/screen/StoreScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/hust/soict/dsai/aims/screen/cart.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hust/soict/dsai/aims/screen/cart.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GUIProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../GUIProject/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GUIProject/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../GUIProject/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GUIProject/src/main/java/hust/soict/dsai/swing/AWTAccumulator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../GUIProject/src/main/java/hust/soict/dsai/swing/AWTAccumulator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GUIProject/src/main/java/hust/soict/dsai/swing/SwingAccumulator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../GUIProject/src/main/java/hust/soict/dsai/swing/SwingAccumulator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P/Design/class.asta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P/Design/class.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P/Requirement/usecase.asta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P/Requirement/usecase.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P/src/main/java/hust/soict/dsai/aims/Aims.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P/src/main/java/hust/soict/dsai/aims/cart/Cart.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P/src/main/java/hust/soict/dsai/aims/media/Book.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P/src/main/java/hust/soict/dsai/aims/media/CompactDisc.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P/src/main/java/hust/soict/dsai/aims/media/DigitalVideoDisc.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P/src/main/java/hust/soict/dsai/aims/media/Disc.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P/src/main/java/hust/soict/dsai/aims/media/Media.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P/src/main/java/hust/soict/dsai/aims/media/MediaComparatorByCostTitle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P/src/main/java/hust/soict/dsai/aims/media/MediaComparatorByTitleCost.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P/src/main/java/hust/soict/dsai/aims/media/Playable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P/src/main/java/hust/soict/dsai/aims/media/Track.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P/src/main/java/hust/soict/dsai/aims/screen/MediaStore.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P/src/main/java/hust/soict/dsai/aims/screen/StoreScreen.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P/src/main/java/hust/soict/dsai/aims/store/Store.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P/src/main/java/hust/soict/dsai/test/cart/CartTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P/src/main/java/hust/soict/dsai/test/disc/TestPassingParameter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P/src/main/java/hust/soict/dsai/test/store/StoreTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P/src/main/java/module-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P/src/main/resources/hust/soict/dsai/screen/cart.fxml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,27 +88,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.AddBookToStoreScreen.executor": "Run",
-    "Application.AddCompactDiscToStoreScreen.executor": "Run",
-    "Application.AddDigitalVideoDiscToStoreScreen.executor": "Run",
-    "Application.CartScreen.executor": "Run",
-    "Application.HelloApplication.executor": "Run",
-    "Application.StoreScreen.executor": "Run",
-    "Application.StoreTest.executor": "Run",
-    "Application.Track.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "13-exception",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "E:/SchoolworkBK/20232/OOP/javafx-sdk-22.0.1/lib",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.46375144",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.AddBookToStoreScreen.executor&quot;: &quot;Run&quot;,
+    &quot;Application.AddCompactDiscToStoreScreen.executor&quot;: &quot;Run&quot;,
+    &quot;Application.AddDigitalVideoDiscToStoreScreen.executor&quot;: &quot;Run&quot;,
+    &quot;Application.CartScreen.executor&quot;: &quot;Run&quot;,
+    &quot;Application.DigitalVideoDisc.executor&quot;: &quot;Run&quot;,
+    &quot;Application.HelloApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Media.executor&quot;: &quot;Run&quot;,
+    &quot;Application.StoreScreen.executor&quot;: &quot;Run&quot;,
+    &quot;Application.StoreTest.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Track.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;15-modify-equals&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/SchoolworkBK/20232/OOP/javafx-sdk-22.0.1/lib&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.46375144&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\SchoolworkBK\20232\OOP\OOPLab\AimsProject\src\main\resources\hust\soict\dsai\aims\screen" />

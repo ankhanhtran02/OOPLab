@@ -1,6 +1,5 @@
 package hust.soict.dsai.swing;
 
-
 import java.awt.Frame;
 import java.awt.GridLayout;
 import java.awt.Label;
@@ -11,9 +10,8 @@ import java.awt.event.ActionListener;
 public class AWTAccumulator extends Frame{
     private TextField tfInput;
     private TextField tfOutput;
-    private int sum = 0;             //Accumulate sum, init to 0
+    private int sum = 0;
 
-    //Constructor to setup the GUI components and event handlers
     public AWTAccumulator() {
         setLayout(new GridLayout(2, 2));
 

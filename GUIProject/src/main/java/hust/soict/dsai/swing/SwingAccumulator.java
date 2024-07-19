@@ -1,6 +1,5 @@
 package hust.soict.dsai.swing;
 
-
 import java.awt.Container;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
@@ -13,9 +12,8 @@ import javax.swing.JTextField;
 public class SwingAccumulator extends JFrame{
     private JTextField tfInput;
     private JTextField tfOutput;
-    private int sum = 0;		//Accumulate sum, init to 0
+    private int sum = 0;
 
-    //Constructor to setup the GUI components and event handlers
     public SwingAccumulator() {
         Container cp = getContentPane();
         cp.setLayout(new GridLayout(2, 2));

@@ -27,9 +27,9 @@
               <items>
                 <Menu mnemonicParsing="false" text="Update Store">
                   <items>
-                    <MenuItem mnemonicParsing="false" text="Add Book" />
-                    <MenuItem mnemonicParsing="false" text="Add CD" />
-                    <MenuItem mnemonicParsing="false" text="Add DVD" />
+                    <MenuItem fx:id="addBookBtn" mnemonicParsing="false" onAction="#addBookBtnPressed" text="Add Book" />
+                    <MenuItem fx:id="addCDBtn" mnemonicParsing="false" onAction="#addCDBtnPressed" text="Add CD" />
+                    <MenuItem fx:id="addDVDBtn" mnemonicParsing="false" onAction="#addDVDBtnPressed" text="Add DVD" />
                   </items>
                 </Menu>
                 <MenuItem fx:id="viewStoreMenuItem" mnemonicParsing="false" onAction="#btnViewStorePressed" text="View Store" />

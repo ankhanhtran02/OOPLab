@@ -43,12 +43,39 @@ public abstract class AddItemToStoreScreen extends JFrame {
         return north;
     }
 
-    JMenuBar createMenuBar(){
+    JMenuBar createMenuBar() {
         JMenu menu = new JMenu("Options");
         JMenu smUpdateStore = new JMenu("Update Store");
-        smUpdateStore.add(new JMenuItem("Add Book"));
-        smUpdateStore.add(new JMenuItem("Add CD"));
-        smUpdateStore.add(new JMenuItem("Add DVD"));
+        JMenuItem addBookItem = new JMenuItem("Add Book");
+        addBookItem.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                new AddBookToStoreScreen(store, cart);
+                AddItemToStoreScreen.this.dispose();
+            }
+        });
+        smUpdateStore.add(addBookItem);
+
+        JMenuItem addCDItem = new JMenuItem("Add CD");
+        addCDItem.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                new AddCompactDiscToStoreScreen(store, cart);
+                AddItemToStoreScreen.this.dispose();
+            }
+        });
+        smUpdateStore.add(addCDItem);
+
+        JMenuItem addDVDItem = new JMenuItem("Add DVD");
+        addDVDItem.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                new AddDigitalVideoDiscToStoreScreen(store, cart);
+                AddItemToStoreScreen.this.dispose();
+            }
+        });
+        smUpdateStore.add(addDVDItem);
+
 
         menu.add(smUpdateStore);
         JMenuItem viewStoreItem = new JMenuItem("View store");
@@ -80,22 +107,19 @@ public abstract class AddItemToStoreScreen extends JFrame {
     abstract JPanel createCenter();
 
 
-    private class ViewCartButtonListener implements ActionListener{
+    private class ViewCartButtonListener implements ActionListener {
         @Override
-        public void actionPerformed(ActionEvent e){
+        public void actionPerformed(ActionEvent e) {
             new CartScreen(cart, store);
             AddItemToStoreScreen.this.dispose();
         }
     }
 
-    private class ViewStoreButtonListener implements ActionListener{
+    private class ViewStoreButtonListener implements ActionListener {
         @Override
-        public void actionPerformed(ActionEvent e){
+        public void actionPerformed(ActionEvent e) {
             new StoreScreen(store, cart);
             AddItemToStoreScreen.this.dispose();
         }
-    }
-
-    public static void main(String[] args) {
     }
 }

@@ -1,5 +1,6 @@
 package hust.soict.dsai.aims.media;
 
+import java.util.Arrays;
 import java.util.Comparator;
 
 public abstract class Media {
@@ -55,14 +56,25 @@ public abstract class Media {
         return matched;
     }
     @Override
-    public boolean equals(Object obj){
-        if (this == obj){
+    public boolean equals(Object obj) {
+        if (this == obj) {
             return true;
         }
-        if (obj == null || getClass() != obj.getClass()) {
-            return false;
+        if (obj == null) {
+            throw new NullPointerException("The object to compare with is null.");
+        }
+        if (!(obj instanceof Media)) {
+            throw new ClassCastException("The object to compare with is not of type Media.");
+        }
+
+        if (this.getClass() != obj.getClass()) {
+            throw new ClassCastException("The object to compare with is not the same class as this Media.");
         }
         Media other = (Media) obj;
+        if (this.title == null || other.title == null) {
+            throw new NullPointerException("One or both of the Media titles are null.");
+        }
         return this.title.equals(other.title);
     }
+
 }
