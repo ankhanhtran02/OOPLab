@@ -1,4 +1,5 @@
 package hust.soict.dsai.aims;
+import hust.soict.dsai.aims.exception.PlayerException;
 import hust.soict.dsai.aims.media.*;
 import hust.soict.dsai.aims.cart.Cart;
 import hust.soict.dsai.aims.store.Store;
@@ -98,7 +99,11 @@ public class Aims {
                     break;
                 case 2:
                     if (media instanceof Playable) {
-                        ((Playable) media).play();
+                        try {
+                            ((Playable) media).play();
+                        } catch (PlayerException e) {
+                            e.printStackTrace();
+                        }
                     } else {
                         System.out.println("This media cannot be played.");
                     }
@@ -124,7 +129,11 @@ public class Aims {
         String title = getStringInput("Enter title:");
         Media media = mainStore.searchByTitle(title);
         if (media instanceof Playable) {
-            ((Playable) media).play();
+            try {
+                ((Playable) media).play();
+            } catch (PlayerException e) {
+                e.printStackTrace();
+            }
         } else {
             System.out.println("This media cannot be played or is not found.");
         }
@@ -175,7 +184,11 @@ public class Aims {
         String title = getStringInput("Enter title:");
         Media media = mainCart.searchByTitle(title);
         if (media instanceof Playable) {
-            ((Playable) media).play();
+            try {
+                ((Playable) media).play();
+            } catch (PlayerException e) {
+                e.printStackTrace();
+            }
         } else {
             System.out.println("This media cannot be played or was not found.");
         }

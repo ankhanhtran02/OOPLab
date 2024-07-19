@@ -5,21 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="24af0b27-a563-4499-ad49-bdc74ad002b5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/hust/soict/dsai/aims/screen/AddBookToStoreScreen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hust/soict/dsai/aims/screen/AddCompactDiscToStoreScreen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hust/soict/dsai/aims/screen/AddDigitalVideoDiscToStoreScreen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hust/soict/dsai/aims/screen/AddItemToStoreScreen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hust/soict/dsai/aims/exception/PlayerException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hust/soict/dsai/aims/Aims.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hust/soict/dsai/aims/Aims.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hust/soict/dsai/aims/media/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hust/soict/dsai/aims/media/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hust/soict/dsai/aims/screen/CartScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hust/soict/dsai/aims/screen/CartScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hust/soict/dsai/aims/screen/CartScreenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hust/soict/dsai/aims/screen/CartScreenController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hust/soict/dsai/aims/screen/MediaStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hust/soict/dsai/aims/screen/MediaStore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hust/soict/dsai/aims/screen/StoreScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hust/soict/dsai/aims/screen/StoreScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/hust/soict/dsai/aims/screen/cart.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hust/soict/dsai/aims/screen/cart.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GUIProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../GUIProject/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hust/soict/dsai/aims/cart/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hust/soict/dsai/aims/cart/Cart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hust/soict/dsai/aims/media/CompactDisc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hust/soict/dsai/aims/media/CompactDisc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hust/soict/dsai/aims/media/DigitalVideoDisc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hust/soict/dsai/aims/media/DigitalVideoDisc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hust/soict/dsai/aims/media/Playable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hust/soict/dsai/aims/media/Playable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hust/soict/dsai/aims/media/Track.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hust/soict/dsai/aims/media/Track.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,9 +59,10 @@
     "Application.HelloApplication.executor": "Run",
     "Application.StoreScreen.executor": "Run",
     "Application.StoreTest.executor": "Run",
+    "Application.Track.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "11-gui",
+    "git-widget-placeholder": "13-exception",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "E:/SchoolworkBK/20232/OOP/javafx-sdk-22.0.1/lib",
     "project.structure.last.edited": "Modules",
