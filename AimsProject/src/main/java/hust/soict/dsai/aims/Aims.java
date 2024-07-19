@@ -225,7 +225,7 @@ public class Aims {
     public static void main(String[] args) {
         CompactDisc cd = new CompactDisc("Thriller", "Music", 51.5f);
         DigitalVideoDisc dvd = new DigitalVideoDisc("Contratiempo", "Crime", "Oriol Paulo", 106, 30.0f);
-        Book book = new Book(5, "Harry Potter", "Fantasy", 11.4f,  new ArrayList<>(Arrays.asList("J.K Rowling")));
+        Book book = new Book("Harry Potter", "Fantasy", 11.4f,  new ArrayList<>(Arrays.asList("J.K Rowling")));
         mainStore.addMedia(cd);
         mainStore.addMedia(dvd);
         mainStore.addMedia(book);

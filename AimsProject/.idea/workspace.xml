@@ -5,9 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="24af0b27-a563-4499-ad49-bdc74ad002b5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/hust/soict/dsai/aims/screen/AddBookToStoreScreen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hust/soict/dsai/aims/screen/AddCompactDiscToStoreScreen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hust/soict/dsai/aims/screen/AddDigitalVideoDiscToStoreScreen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hust/soict/dsai/aims/screen/AddItemToStoreScreen.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hust/soict/dsai/aims/Aims.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hust/soict/dsai/aims/Aims.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hust/soict/dsai/aims/media/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hust/soict/dsai/aims/media/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hust/soict/dsai/aims/screen/CartScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hust/soict/dsai/aims/screen/CartScreen.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hust/soict/dsai/aims/screen/CartScreenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hust/soict/dsai/aims/screen/CartScreenController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hust/soict/dsai/aims/screen/MediaStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hust/soict/dsai/aims/screen/MediaStore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hust/soict/dsai/aims/screen/StoreScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hust/soict/dsai/aims/screen/StoreScreen.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/hust/soict/dsai/aims/screen/cart.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hust/soict/dsai/aims/screen/cart.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GUIProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../GUIProject/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +34,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="release/lab05" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="MavenImportPreferences">
@@ -42,13 +59,22 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.AddBookToStoreScreen.executor": "Run",
+    "Application.AddCompactDiscToStoreScreen.executor": "Run",
+    "Application.AddDigitalVideoDiscToStoreScreen.executor": "Run",
     "Application.CartScreen.executor": "Run",
     "Application.HelloApplication.executor": "Run",
+    "Application.StoreScreen.executor": "Run",
     "Application.StoreTest.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "09-delete-media",
-    "kotlin-language-version-configured": "true"
+    "git-widget-placeholder": "11-gui",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "E:/SchoolworkBK/20232/OOP/javafx-sdk-22.0.1/lib",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.46375144",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -57,8 +83,8 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="StoreTest" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="hust.soict.dsai.test.store.StoreTest" />
+    <configuration name="StoreScreen" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="hust.soict.dsai.aims.screen.StoreScreen" />
       <module name="AimsProject" />
       <method v="2">
         <option name="Make" enabled="true" />

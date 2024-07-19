@@ -32,7 +32,7 @@
                     <MenuItem mnemonicParsing="false" text="Add DVD" />
                   </items>
                 </Menu>
-                <MenuItem mnemonicParsing="false" onAction="#btnViewStorePressed" text="View Store" />
+                <MenuItem fx:id="viewStoreMenuItem" mnemonicParsing="false" onAction="#btnViewStorePressed" text="View Store" />
                 <MenuItem mnemonicParsing="false" text="View Cart" />
               </items>
             </Menu>
@@ -84,7 +84,7 @@
 
           </children>
         </HBox>
-        <TableView>
+        <TableView fx:id="tblMedia">
           <columns>
             <TableColumn fx:id="colMediaTitle" prefWidth="75.0" text="Title" />
             <TableColumn fx:id="colMediaCategory" prefWidth="75.0" text="Category" />
@@ -104,7 +104,7 @@
     </VBox>
   </center>
   <right>
-    <VBox fx:id="tblMedia" alignment="TOP_CENTER" prefHeight="200.0" BorderPane.alignment="CENTER">
+    <VBox alignment="TOP_CENTER" prefHeight="200.0" BorderPane.alignment="CENTER">
       <padding>
         <Insets top="50.0" />
       </padding>

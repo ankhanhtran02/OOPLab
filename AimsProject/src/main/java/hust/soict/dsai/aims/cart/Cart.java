@@ -9,10 +9,9 @@ import java.util.ArrayList;
 public class Cart {
     public static final int MAX_NUMBER_ORDERED = 20;
     private ObservableList<Media> itemsOrdered = FXCollections.observableArrayList();
-    public void addMedia(Media media){
-        if (itemsOrdered.size() == MAX_NUMBER_ORDERED){
-            System.out.println("Maximum number of orders exceeded");
-            return;
+    public void addMedia(Media media) throws LimitExceededException{
+        if (itemsOrdered.size() >= MAX_NUMBER_ORDERED){
+            throw new LimitExceededException("Maximum number of orders exceeded");
         }
         itemsOrdered.add(media);
         System.out.println("Added the media to the cart");

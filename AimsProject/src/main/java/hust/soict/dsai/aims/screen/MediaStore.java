@@ -1,13 +1,19 @@
 package hust.soict.dsai.aims.screen;
 
+import hust.soict.dsai.aims.cart.Cart;
 import hust.soict.dsai.aims.media.Media;
 import hust.soict.dsai.aims.media.Playable;
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
 
 public class MediaStore extends JPanel {
     private Media media;
-    public MediaStore(Media media) {
+    private Cart cart;
+    public MediaStore(Cart cart, Media media) {
+        this.cart = cart;
         this.media = media;
         this.setLayout(new BoxLayout(this, BoxLayout.Y_AXIS));
         JLabel title = new JLabel(media.getTitle());
@@ -16,10 +22,25 @@ public class MediaStore extends JPanel {
         JLabel cost = new JLabel(media.getCost() + " $");
         cost.setAlignmentX(CENTER_ALIGNMENT);
         JPanel container = new JPanel();
+        JButton addToCartButton = new JButton("Add to cart");
+        addToCartButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                cart.addMedia(media);
+                JOptionPane.showMessageDialog(null, media.getTitle() + " added to cart.");
+            }
+        });
         container.setLayout(new FlowLayout(FlowLayout.CENTER));
-        container.add(new JButton("Add to cart"));
+        container.add(addToCartButton);
         if (media instanceof Playable) {
-            container.add(new JButton("Play"));
+            JButton playButton = new JButton("Play");
+            playButton.addActionListener(new ActionListener() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+                    JOptionPane.showMessageDialog(null, "Playing " + media.getTitle() + ".");
+                }
+            });
+            container.add(playButton);
         }
         this.add(Box.createVerticalGlue());
         this.add(title);
@@ -27,5 +48,9 @@ public class MediaStore extends JPanel {
         this.add(Box.createVerticalGlue());
         this.add(container);
         this.setBorder(BorderFactory.createLineBorder(Color.BLACK));
+    }
+
+    public Cart getCart() {
+        return cart;
     }
 }
